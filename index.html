@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Fotogram</title>
         <link rel="stylesheet" href="./styles/variablen.css" />
         <link rel="stylesheet" href="./styles/fonts.css" />
         <link rel="stylesheet" href="./styles/standard.css" />
@@ -11,13 +11,35 @@
         <script src="script.js" defer></script>
     </head>
     <body onload="render()">
-        <header></header>
+        <header class="header-top">
+            <div class="header-content">
+                <img
+                    src="./assets/icons/Favicon.png"
+                    alt="Bunte Blume mit 4 großen und 4 kleinen Blättern"
+                />
+                <h2>Fotogram</h2>
+            </div>
+        </header>
         <main>
             <section class="main-content">
-                <h1>my personal photo album</h1>
+                <h1>My personal photo album</h1>
                 <div id="photo-box-content"></div>
 
-                <dialog></dialog>
+                <dialog>
+                    <header class="dialog-header">
+                        <h2 id="dialog-h2"></h2>
+                        <button
+                            id="dialogBtn"
+                            onclick="endDialog(event)"
+                        ></button>
+                    </header>
+
+                    <div class="dialog-content" id="dialogContent"></div>
+
+                    <footer class="dialog-footer" id="dialogFooter">
+                        <div></div>
+                    </footer>
+                </dialog>
             </section>
         </main>
     </body>
