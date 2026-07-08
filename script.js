@@ -47,4 +47,14 @@ const photoArray = [
         name: "Ein Baum im Schnee und mit schnee bedeckt",
         link: "./assets/images/12_Pic.jpg"
     }
-]
+];
+
+const containerRef = document.getElementById('photo-box-content');
+
+function renderBoxes() {
+    containerRef.innerHTML = "";
+    for (let i = 0; i < photoArray.length; i++) {
+        containerRef.innerHTML += 
+        `
+    }
+}
