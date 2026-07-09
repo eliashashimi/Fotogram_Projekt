@@ -9,7 +9,7 @@ const photoArray = [
     },
     {
         name: "Helle und Dunkle Wolken am Himmel",
-        link: "./assets/images/3_Pic.jpg"
+        link: "./assets/images/3_Pic.png"
     },
     {
         name: "Grün gelber Vogel auf einem Ast",
@@ -54,7 +54,17 @@ const containerRef = document.getElementById('photo-box-content');
 function renderBoxes() {
     containerRef.innerHTML = "";
     for (let i = 0; i < photoArray.length; i++) {
-        containerRef.innerHTML += 
-        `
+        containerRef.innerHTML += /*html*/`
+        <img onclick="openDialog()" class="img"; src="${photoArray[i].link}" alt="${photoArray[i].name}"> `
+        
     }
+}
+
+const dialogRef = document.getElementById('mydialog');
+
+function openDialog (i) {
+    dialogRef.showModal();
+    dialogRef.innerHTML = /*html*/`
+    `
+    
 }
