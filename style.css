@@ -233,6 +233,11 @@ h1 {
     gap: 10px;
 }
 
+.footer-upper-part a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
 .footer-upper-part h4 {
     font-family: "Figtree";
     font-style: normal;
