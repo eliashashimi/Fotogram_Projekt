@@ -29,10 +29,10 @@
         <main class="main-content">
                 <h1>My personal photo album</h1>
                 <div class="photo-box-content" id="photo-box-content"></div>
-                <dialog id="myDialog" onclick="endDialog(event)">
+                <dialog  id="myDialog" aria-labelledby="dialogTitle" aria-describedby="dialogDescr" onclick="endDialog(event)">
                     <div class="event-protection" onclick="eventBubbling(event)">
                     <header class="dialog-header">
-                        <h2 class="dialog-h2" id="dialog-h2"></h2>
+                        <h2 class="dialogDescr" id="dialogDescr"></h2>
                         <button class="dialogBtn"
                             id="dialogBtn" onclick="endDialog(event)"
                         ></button>

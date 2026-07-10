@@ -5,7 +5,7 @@ function openDialogTemp (i) {
         src="${photoArray[i].link}" alt="${photoArray[i].name}" />
         </button>`
 }
-
+        
 function h2Temp (i) {
     return /*html*/`${photoArray[i].name}`;
 }

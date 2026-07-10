@@ -66,7 +66,7 @@ function renderBoxes(event) {
 function openDialog(i) {
     dialogRef.showModal();
     
-    const h2Ref = document.getElementById('dialog-h2');
+    const h2Ref = document.getElementById('dialogDescr');
     h2Ref.innerText = "";
     h2Ref.innerText += h2Temp(i);
 
