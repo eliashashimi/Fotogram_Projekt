@@ -65,6 +65,7 @@ function renderBoxes(event) {
 
 function openDialog(i) {
     dialogRef.showModal();
+    dialogRef.classList.add('opened');
     
     const h2Ref = document.getElementById('dialogDescr');
     h2Ref.innerText = "";
@@ -113,6 +114,7 @@ function btnArrowRight(i) {
 
 function endDialog(event) {
     dialogRef.close();
+    dialogRef.classList.remove('opened');
     event.stopPropagation();
 }
 
