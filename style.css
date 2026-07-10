@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 160px 0px;
+    padding: 160px 26px;
 }
 
 h1 {
@@ -250,8 +250,13 @@ h1 {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 385px) {
     h1 {
         font-size: 38px;
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
     }
 }
