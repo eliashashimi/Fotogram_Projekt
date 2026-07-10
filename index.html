@@ -13,9 +13,10 @@
         <link rel="stylesheet" href="./styles/fonts.css" />
         <link rel="stylesheet" href="./styles/standard.css" />
         <link rel="stylesheet" href="style.css" />
+        <script src="template.js" defer ></script>
         <script src="script.js" defer></script>
     </head>
-    <body onload="renderBoxes()">
+    <body onload="renderBoxes(event)">
         <header class="header-top">
             <div class="header-content">
                 <img
@@ -27,23 +28,21 @@
         </header>
         <main>
             <section class="main-content">
-                <h1>My personal photo album</h1>
-                <div id="photo-box-content"></div>
-
+                <div class="wrapper-main">
+                    <h1>My personal photo album</h1>
+                    <div class="photo-box-content" id="photo-box-content"></div>
+                </div>
                 <dialog id="myDialog">
                     <header class="dialog-header">
-                        <h2 id="dialog-h2"></h2>
-                        <button
-                            id="dialogBtn"
-                            onclick="endDialog(event)"
+                        <h2 class="dialog-h2" id="dialog-h2"></h2>
+                        <button class="dialogBtn"
+                            id="dialogBtn" onclick="endDialog(event)"
                         ></button>
                     </header>
 
                     <div class="dialog-content" id="dialogContent"></div>
 
-                    <footer class="dialog-footer" id="dialogFooter">
-                        <div></div>
-                    </footer>
+                    <footer class="dialog-footer" id="dialogFooter"></footer>
                 </dialog>
             </section>
         </main>
