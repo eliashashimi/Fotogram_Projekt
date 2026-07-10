@@ -10,7 +10,7 @@ const photoArray = [
     },
     {
         name: "Helle und Dunkle Wolken am Himmel",
-        link: "./assets/images/3_Pic.png"
+        link: "./assets/images/3_Pic.jpg"
     },
     {
         name: "Grün gelber Vogel auf einem Ast",
