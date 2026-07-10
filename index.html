@@ -27,21 +27,19 @@
             </div>
         </header>
         <main class="main-content">
-                <div class="wrapper-main">
-                    <h1>My personal photo album</h1>
-                    <div class="photo-box-content" id="photo-box-content"></div>
-                </div>
-                <dialog id="myDialog">
+                <h1>My personal photo album</h1>
+                <div class="photo-box-content" id="photo-box-content"></div>
+                <dialog id="myDialog" onclick="endDialog(event)">
+                    <div class="event-protection" onclick="eventBubbling(event)">
                     <header class="dialog-header">
                         <h2 class="dialog-h2" id="dialog-h2"></h2>
                         <button class="dialogBtn"
                             id="dialogBtn" onclick="endDialog(event)"
                         ></button>
                     </header>
-
                     <div class="dialog-content" id="dialogContent"></div>
-
                     <footer class="dialog-footer" id="dialogFooter"></footer>
+                    </div>
                 </dialog>
         </main>
         <footer class="footer">

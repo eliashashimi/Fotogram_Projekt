@@ -1,7 +1,13 @@
-function h2Temp (i) {
+function openDialogTemp (i) {
     return /*html*/`
-        <h2>${photoArray[i].name}</h2>
-    `;
+        <button class="photo-button" onclick="openDialog(${i})">
+        <img class="img" 
+        src="${photoArray[i].link}" alt="${photoArray[i].name}" />
+        </button>`
+}
+
+function h2Temp (i) {
+    return /*html*/`${photoArray[i].name}`;
 }
 
 function dialogBtnTemp() {

@@ -29,11 +29,11 @@ const photoArray = [
         link: "./assets/images/7_Pic.jpg"
     },
     {
-        name: "Ein Mann auf einem Fels mit Taschenlampe",
+        name: "Ein Mann auf einem Fels",
         link: "./assets/images/8_Pic.jpg"
     },
     {
-        name: "Kleiner weiß brauner Vogel auf einem Fels",
+        name: "Kleiner weiß brauner Vogel",
         link: "./assets/images/9_Pic.jpg"
     },
     {
@@ -45,7 +45,7 @@ const photoArray = [
         link: "./assets/images/11_Pic.jpg"
     },
     {
-        name: "Ein Baum im Schnee und mit schnee bedeckt",
+        name: "Ein Baum im Schnee",
         link: "./assets/images/12_Pic.jpg"
     }
 ];
@@ -53,26 +53,22 @@ const photoArray = [
 // Referenz auf den Container für die Foto-Boxes
 const containerRef = document.getElementById('photo-box-content');
 // Aufruf der Funktion zum Rendern der Foto-Boxes
-
-
+const dialogRef = document.getElementById('myDialog');
 // Funktion zum Rendern der Foto-Boxes
 function renderBoxes(event) {
     containerRef.innerHTML = "";
     for (let i = 0; i < photoArray.length; i++) {
-        containerRef.innerHTML += /*html*/`
-        <img onclick="openDialog(${i})" class="img" 
-        src="${photoArray[i].link}" alt="${photoArray[i].name}" /> `;
+        containerRef.innerHTML += openDialogTemp (i);
     }
     event.stopPropagation();
 }
-const dialogRef = document.getElementById('myDialog');
 
 function openDialog(i) {
     dialogRef.showModal();
     
     const h2Ref = document.getElementById('dialog-h2');
-    h2Ref.innerHTML = "";
-    h2Ref.innerHTML += h2Temp(i);
+    h2Ref.innerText = "";
+    h2Ref.innerText += h2Temp(i);
 
 
     const xBtnRef = document.getElementById('dialogBtn');
@@ -117,5 +113,9 @@ function btnArrowRight(i) {
 
 function endDialog(event) {
     dialogRef.close();
+    event.stopPropagation();
+}
+
+function eventBubbling(event) {
     event.stopPropagation();
 }
