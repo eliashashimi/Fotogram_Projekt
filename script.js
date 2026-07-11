@@ -1,4 +1,3 @@
-// Was brauche ich - ein Array mit Objekten in den Fotos und Namen enthalten sind
 const photoArray = [
     {
         name: "See und Berge mit Eis und Schnee ",
@@ -50,11 +49,9 @@ const photoArray = [
     }
 ];
 
-// Referenz auf den Container für die Foto-Boxes
 const containerRef = document.getElementById('photo-box-content');
-// Aufruf der Funktion zum Rendern der Foto-Boxes
 const dialogRef = document.getElementById('myDialog');
-// Funktion zum Rendern der Foto-Boxes
+
 function renderBoxes(event) {
     containerRef.innerHTML = "";
     for (let i = 0; i < photoArray.length; i++) {
@@ -85,8 +82,6 @@ function openDialog(i) {
     const dialogFooterRef = document.getElementById('dialogFooter');
     dialogFooterRef.innerHTML = "";
     dialogFooterRef.innerHTML += dialogFooterTemp(i);
-
-    
 }
 
 function btnArrowLeft (i) {
@@ -102,6 +97,7 @@ function btnArrowLeft (i) {
 }
 
 function btnArrowRight(i) {
+    
     if (i === 11) {
         i = 0;
     } else {
