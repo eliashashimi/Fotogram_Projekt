@@ -86,6 +86,7 @@ h1 {
     height: 160px;
     border: 3px solid black;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .img:hover {
@@ -97,8 +98,8 @@ h1 {
     border-radius: 40px;
     width: 680px;
     margin: auto;
-    transform: translateX(200px);
-    transition: all 0.5s ease-in;
+    /* transform: translateX(600px);
+    transition: all 0.5s ease-in; */
 }
 
 #myDialog.opened {
@@ -106,8 +107,8 @@ h1 {
     border-radius: 40px;
     width: 680px;
     margin: auto;
-    transform: translateX(0px);
-    transition: all 0.5s ease-in;
+    /* transform: translateX(0px);
+    transition: all 0.5s ease-in; */
 }
 
 #myDialog::backdrop {
@@ -231,11 +232,6 @@ h1 {
     align-items: center;
     color: rgba(255, 255, 255, 1);
     gap: 10px;
-}
-
-.footer-upper-part a {
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
 }
 
 .footer-upper-part h4 {
