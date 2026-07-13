@@ -13,24 +13,7 @@ function openDialog(i) {
     dialogRef.showModal();
     dialogRef.classList.add('opened');
     
-    const h2Ref = document.getElementById('dialogDescr');
-    h2Ref.innerText = "";
-    h2Ref.innerText += h2Temp(i);
-
-
-    const xBtnRef = document.getElementById('dialogBtn');
-    xBtnRef.innerHTML = "";
-    xBtnRef.innerHTML += dialogBtnTemp();
-    
-
-    const dialogContentRef = document.getElementById('dialogContent');
-    dialogContentRef.innerHTML = "";
-    dialogContentRef.innerHTML += dialogContentTemp(i);
-
-    
-    const dialogFooterRef = document.getElementById('dialogFooter');
-    dialogFooterRef.innerHTML = "";
-    dialogFooterRef.innerHTML += dialogFooterTemp(i);
+    dialogAllContentTemp(i);
 }
 
 function btnArrowLeft (i) {
