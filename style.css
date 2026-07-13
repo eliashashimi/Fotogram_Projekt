@@ -87,6 +87,7 @@ h1 {
     border: 3px solid black;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .img:hover {
@@ -179,7 +180,9 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 48px;
+    text-align: center;
+    /* gap: 48px; */
+    object-fit: contain;
 }
 
 .arrows {
@@ -201,11 +204,14 @@ h1 {
 }
 
 .dialogFooter-P {
+    width: 100px;
     color: rgba(255, 255, 255, 1);
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: "Figtree";
     font-style: normal;
+    text-align: center;
 }
 
 .footer {
@@ -261,6 +267,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
     .dialog-header {
+        min-height: 170px;
         flex-direction: column-reverse;
         gap: 20px;
     }
@@ -279,4 +286,19 @@ h1 {
         width: 150px;
         height: 150px;
     }
+
+    .dialog-header {
+        min-height: 180px;
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .img {
+        width: 230px;
+        height: 230px;
+    }
+    
 }
